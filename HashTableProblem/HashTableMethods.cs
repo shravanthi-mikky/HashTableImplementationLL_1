@@ -34,17 +34,7 @@ namespace HashTableProblem
                 return;
             }
 
-            /* if (node.Key.Equals( key))
-                 throw new Exception("Can't use same key!");
-
-             while (node.Next != null)
-             {
-                 node = node.Next;
-                 if (node.Key.Equals(key))
-                     throw new Exception("Can't use same key!");
-             }*/
-
-            MyMapNode<K, V> newNode = new MyMapNode<K, V>() { Key = key, Value = value, Previous = node, Next = null };
+            MyMapNode<K, V> newNode = new() { Key = key, Value = value, Previous = node, Next = null };
             node.Next = newNode;
         }
 
