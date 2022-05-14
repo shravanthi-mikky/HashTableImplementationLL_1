@@ -12,6 +12,5 @@ namespace HashTableProblem
         public V Value { get; set; }
         public MyMapNode<K, V> Next { get; set; }
         public MyMapNode<K, V> Previous { get; set; }
-
     }
 }
